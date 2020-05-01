@@ -1,0 +1,71 @@
+body {
+  .main {
+    .container {
+      .signup-content {
+        .signup-container {
+          background-image: url(/public/downloadpage-bg.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          width: 100%;
+          border: 6px solid #3bb3c2;
+          outline: 2px solid black;
+
+          .signup-text {
+            text-align: center;
+            h1 {
+              font-weight: 600;
+              text-align: center;
+              margin-top: 0;
+            }
+            .form {
+              display: flex;
+              max-width: 480px;
+              flex-direction: column;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: left;
+              input {
+                background-color: #008cc7;
+                border: 1px solid black;
+                padding-top: 0.4rem;
+                padding-left: 0.5rem;
+                padding-bottom: 0.4rem;
+                font-size: 14px;
+
+                width: 100%;
+              }
+            }
+            .create-btn {
+              background-color: #008cc7;
+              border: 1px solid black;
+              font-size: 14px;
+              padding: 0.5rem;
+              text-decoration: none;
+              color: white;
+              display: block;
+              max-width: 155px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+        .signup-container > * {
+          z-index: 10;
+          position: relative;
+        }
+        .signup-container::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #ffedd1;
+          opacity: 0.9;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
